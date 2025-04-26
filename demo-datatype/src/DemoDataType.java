@@ -46,7 +46,7 @@ public class DemoDataType {
 
         // ! put x3 value into variable x2
         int x3 = 9;
-        x2 = x3
+        x2 = x3;
 
         // ! add 3 to itself
         x2 = x2 + 8;

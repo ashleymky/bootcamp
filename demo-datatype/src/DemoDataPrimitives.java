@@ -3,7 +3,7 @@ public class DemoDataPrimitives {
     System.out.println("Ho");
 
 
-    //byte, short, int, long (Store Integer)
+    // byte, short, int, long (Store Integer)
     byte b1 = 3;
     short s1 = 3;
     int i1 = 3;
@@ -18,10 +18,10 @@ public class DemoDataPrimitives {
     s1 = 32767;
     i1 = 2_147_483_647;
     // il + 1 -> -2147483648 (overflow)
-    il = il + 1;
-    System.out.println(il);
+    i1 = i1 + 1;
+    System.out.println(i1);
 
-    l1 = 2_200_000_000; // error as we assign value into long variable
+    // l1 = 2_200_000_000; // error as we assign value into long variable
     l1 = 2_200_000_000L;
 
     // long + int -> long + long -> long

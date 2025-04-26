@@ -28,13 +28,13 @@ public class DemoArray {
     // 1.1, 9.2, -9.8, 77.9
     // print them out
 
-    double[] arr = new double[4];
-    arr[0] = 1.1;
-    arr[1] = 9.2;
-    arr[2] = -9.8;
-    arr[3] = 77.9;
+    double[] arr2 = new double[4];
+    arr2[0] = 1.1;
+    arr2[1] = 9.2;
+    arr2[2] = -9.8;
+    arr2[3] = 77.9;
 
-    System.out.println(arr[0]);
+    System.out.println(arr2[0]);
 
 
   } 
