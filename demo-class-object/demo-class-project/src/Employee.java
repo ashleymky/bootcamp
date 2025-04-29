@@ -48,7 +48,7 @@ public class Employee {
         System.out.println(e1.getAge()); // "26"
 
         e1.setEmail("john@gmail.com");
-        System.out.println(e1.getEmail());
+        System.out.println(e1.getEmail()); // john@gmail.com
 
     }
 }
