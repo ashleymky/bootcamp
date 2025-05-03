@@ -17,7 +17,14 @@ public class JavaQuest8 {
         secondMax = testCase1[i];
       }
       }
-      System.out.println(secondMax);
+      System.out.println("Second Max = " + secondMax);
+
+      for (int i = 0; i < testCase1.length; i++) {
+        if (testCase1[i] > secondMin) {
+          secondMin = testCase1[i];
+        }
+        System.out.println("Second Min = " + secondMin);
+      }
 
     }
     
