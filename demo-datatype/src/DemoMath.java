@@ -1,6 +1,6 @@
 public class DemoMath {
   public static void main(String[] args) {
-    // pow
+    // pow 次方
     // 2^4 = 16
 
     double result = Math.pow(2.0, 4.5);

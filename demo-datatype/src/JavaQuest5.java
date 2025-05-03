@@ -6,19 +6,22 @@ public class JavaQuest5 {
 
     String str = "coding bootcamp."; // You should not change this line
     char target = 'c';
+    int Index = str.lastIndexOf("c");
+
+    System.out.println(Index);
 
     // if found, print "Found."
     // if not found, print "Not Found."
     // code here ...
-    for (i = 0; i < str.length(); i++) {
+    for (int i = 0; i < str.length(); i++) {
       if (str.charAt(i) == target) {
         System.out.println("Found.");
       } else {
         System.out.println("Not Found.");
       }
+
+        }
+      }
     }
 
-  }
 
-
-}

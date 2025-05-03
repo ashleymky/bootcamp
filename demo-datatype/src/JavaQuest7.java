@@ -9,8 +9,8 @@ public class JavaQuest7 {
     int sum = 0;
     int[] arr = new int[10];
     
-    for (i = 0; i < 11; i++) {
-      
+    for (int i = 0; i < 11; i++) {
+      sum += i;
     }
 
     // Write a loop to sum up all value in the int array
