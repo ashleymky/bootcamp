@@ -11,7 +11,8 @@ public class Order {
 // }
 
   public Order (Item item) {
-    this.items = new Item[0];
+    this.items = new Item[1];
+    this.items[0] = item;
 }
 
   //! difficult!
@@ -35,16 +36,18 @@ public class Order {
   }
 
   public static void main(String[] args) {
-    Order order = new Order(); // array length = 0
-
     Item itemA = new Item(99, 2);
+
+    Order order = new Order(itemA); // array length = 0
+
     order.add(itemA); // array length = 1
 
     Item itemB = new Item(14, 3);
     order.add(itemB); // array length = 2
 
-    System.out.println(order.checkoutAmount());
+    System.out.println(order.checkoutAmount()); // 240.0
   }
+
 
 
 }

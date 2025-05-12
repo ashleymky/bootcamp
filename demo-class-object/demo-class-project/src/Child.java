@@ -52,6 +52,7 @@ public class Child {
     Child c2 = new Child("Leo", "Wong");
     System.out.println(c1.getid());
     System.out.println(c2.getid());
+    System.out.println(c2.getFirstName().equals("LEO"));
 
   }
 

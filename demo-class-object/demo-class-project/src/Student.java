@@ -1,3 +1,5 @@
-class Student {
+public class Student {
     // Student -> receive (Candy candy)
+
+
 }
