@@ -1,6 +1,6 @@
 public class Dog extends Animal {
   private int age;
-  private String name;
+  // private String name;
   private double weight;
 
   public Dog(double weight, int age) {
@@ -10,10 +10,6 @@ public class Dog extends Animal {
 
   public int getAge() {
     return super.getAge();
-  }
-
-  public String getName() {
-    return this.name;
   }
 
   public double getWeight() {

@@ -18,11 +18,10 @@ public class Candy {
   }
 
   public static void main(String[] args) {
-    Candy c1 = new Candy();
+    Candy c1 = new Candy("Red", 4);
+    Candy[] candies = new Candy[] {}
     // Candy c1 = new Candy("RED", 3);
-    c1.getColor();
     Candy c2 = new Candy("YELLOW", 4);
-    c1.getColor("RED");
     System.out.println(c1.getColor());
 
     // Distribute 20 Candy to 3 Student

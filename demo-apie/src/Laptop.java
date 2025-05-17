@@ -8,9 +8,10 @@ public class Laptop extends Machine {
     this.ram = ram;
   }
 
-  public int getPower() {
-    return this.power();
-  }
+  
+  //public int getPower() {
+  //  return this.power();
+  // }
 
   @Override
   public void start() {
@@ -26,7 +27,7 @@ public class Laptop extends Machine {
 
   @Override
   public String getStatus() {
-    return "Laptop power:" + super.getPower();
+    //return "Laptop power:" + super.getPower();
   }
 
 
