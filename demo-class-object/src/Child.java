@@ -19,6 +19,10 @@ public class Child {
 }
 
   // getter
+  public String fullName() {
+    return this.firstName + " " + this.lastName;
+  }
+
   public String getFirstName() {
     return this.firstName;
   }
@@ -53,6 +57,7 @@ public class Child {
     System.out.println(c1.getid());
     System.out.println(c2.getid());
     System.out.println(c2.getFirstName().equals("LEO"));
+    System.out.println(c2.fullName());
 
   }
 
