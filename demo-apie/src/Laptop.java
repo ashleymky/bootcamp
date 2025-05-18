@@ -3,11 +3,13 @@
 public class Laptop extends Machine {
   private int ram;
 
-  public Laptop (int ram, int power) {
-    super(power);
+  public Laptop (int ram) {
     this.ram = ram;
   }
 
+  public int getRam() {
+    return this.ram;
+  }
   
   //public int getPower() {
   //  return this.power();
@@ -27,10 +29,9 @@ public class Laptop extends Machine {
 
   @Override
   public String getStatus() {
-    //return "Laptop power:" + super.getPower();
+    String status = super.isOn() ? "ON" : "OFF";
+    return "Laptop status: " + status;
   }
-
-
 
 }
 

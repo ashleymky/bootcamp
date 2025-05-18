@@ -36,7 +36,7 @@ public class JavaQuest8 {
   // if (testCase1[i] > secondMax) {
   // secondMax = testCase1[i];
   // }
-}
+
 // System.out.println("Second Max = " + secondMax);
 
 // for (int i = 0; i < testCase1.length; i++) {

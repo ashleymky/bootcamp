@@ -1,12 +1,20 @@
 import java.util.Objects;
 
-public class Card1 {
+public class Card {
   private char rank; // 1,2,3,4,5,6,7,8,9,T,J,Q,K
   private char suit; // D,C,H,S spade, heart ,diamond, club
 
-  public Card1(char rank, char suit) {
+  public Card(char rank, char suit) {
     this.rank = rank;
     this.suit = suit;
+  }
+  
+  public char getRank() {
+    return this.rank;
+  }
+
+  public char getSuit() {
+    return this.suit;
   }
 
   // ! Override false -> true
@@ -25,22 +33,26 @@ public class Card1 {
     return this.rank == card.getRank() && this.suit == card.getSuit();
 
 
-    @Override
-    public int hashCode() {
-      return Objects.hash(this.rank, this.suit);
-    }
+   @Override
+  public int hashCode() {
+    return Objects.hash(this.rank, this.suit);
+  }
 
-    @Override
-    public String toString() {
-      return "Card" + "Rank = " + this.rank;
-    }
+  @Override
+  public String toString() {
+    return "Card(" 
+      + "rank=" + this.rank
+      + ",suit=" + this.suit
+      + ")";
+  }
+
 
     // ACE Diamond vs King Diamond -> 1
     // King Diamond vs ACE Diamond -> -1
-    public Card compareTo(Card card) {
+    //public Card compareTo(Card card) 
       // compare rank
       // S > H > C > D
-    }
+    
   }
 
 

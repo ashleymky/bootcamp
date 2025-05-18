@@ -1,17 +1,12 @@
 public abstract class Machine {
-  private int power;
   private boolean isOn;
 
-  public Machine(int power) {
-    this.power = power;
-  }
-
-  //public int getPower() {
-  //  return this.power;
-  //}
+  // public int getPower() {
+  // return this.power;
+  // }
 
   public Machine() {
-    this.isOn = false; //唔寫＝default false
+    this.isOn = false; // 唔寫＝default false
   }
 
   // getter
@@ -24,6 +19,7 @@ public abstract class Machine {
   public void turnOn() {
     this.isOn = true;
   }
+
   public void turnOff() {
     this.isOn = false;
   }
@@ -31,34 +27,31 @@ public abstract class Machine {
 
   // abstract method
   public abstract String getStatus();
+
   public abstract void start();
+
   public abstract void stop();
 
 
   public static void main(String[] args) {
-    Machine phone = new Phone(10, 1);
+    Machine phone = new Phone(10);
     //System.out.println(phone.getPower());
     phone.start();
     phone.stop();
     System.out.println("====");
     
-
-    Machine Laptop =  new Laptop(240, 3);
-    //System.out.println(Laptop.getPower());
+    Machine Laptop =  new Laptop(240);
     Laptop.start();
     Laptop.stop();
 
-    Phone p2 = new Phone(11, 2);
-    System.out.println(p2.getVersion());
-    Laptop l2 = new Laptop(144, 10);
-    //System.out.println(l2.getPower());
-    
- 
-};
+    Phone p2 = new Phone(18.5);
+    System.out.println(p2.getScreenSize()); // 18.5
+    System.out.println(p2.getStatus()); // Phone status: OFF
+    Laptop l2 = new Laptop(24);
+    System.out.println(l2.getRam()); // 24
+    System.out.println(l2.getStatus()); // Laptop status: OFF
   }
 
-
-
-
+}
 
 
