@@ -1,9 +1,9 @@
 import java.math.BigDecimal;
 
 public class Circle extends Shape {
-  private double radius;
+  private BigDecimal radius;
 
-  public Circle(String color, double radius) {
+  public Circle(String color, BigDecimal radius) {
     super(color);
     this.radius = radius;
   }

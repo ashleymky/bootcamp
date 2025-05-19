@@ -6,5 +6,8 @@ public class DemoInheritance {
     // P = Polymorphism
     // I = Inheritance (Parent class: Concrete/ Abstract)
     // E = Encapsulation 封裝
+
+    // A and I -> Polymorphism
+    
   }
 }

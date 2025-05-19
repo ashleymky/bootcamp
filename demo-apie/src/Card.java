@@ -1,6 +1,15 @@
 import java.util.Objects;
 
 public class Card {
+  private static final int DIAMOND = 1;
+  private static final int CLUB = 2;
+  private static final int HEART = 3;
+  private static final int SPADE = 4;
+
+  private static final int ACE = 1;
+  
+
+
   private char rank; // 1,2,3,4,5,6,7,8,9,T,J,Q,K
   private char suit; // D,C,H,S spade, heart ,diamond, club
 
@@ -49,12 +58,25 @@ public class Card {
 
     // ACE Diamond vs King Diamond -> 1
     // King Diamond vs ACE Diamond -> -1
-    //public Card compareTo(Card card) 
+    public int compareTo(Card card) {
+      if (this.rank == card.getRank()) {
+        if
+      }
+      return 1;
+    }
       // compare rank
       // S > H > C > D
-    
+
   }
 
+  public static int compareTo(char suit1, char suit2) {
+    if (suit1 == suit2) 
+     return 0;
+    if (suit1 > suit2) 
+     return -1;
+    return 1;
+    }
+  }
 
-
+  public static 
 }
