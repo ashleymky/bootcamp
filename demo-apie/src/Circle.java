@@ -10,10 +10,7 @@ public class Circle extends Shape {
 
   @Override
   public double area() {
-    return BigDecimal.valueOf(this.radius)
-        .multiply(BigDecimal.valueOf(this.radius)) //
-        .multiply(BigDecimal.valueOf(Math.PI)) //
-        .doubleValue();
+    return radius.multiply(radius).multiply(BigDecimal.valueOf(Math.PI)).doubleValue();
   }
 
   // equals(), hashCode(), toString()
