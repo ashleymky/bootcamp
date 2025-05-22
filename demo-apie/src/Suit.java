@@ -1,9 +1,7 @@
 public enum Suit {
-  DIAMOND, // no need DIAMOND (1),
-  CLUB,
-  HEART,
-  SPADE,
-  ;
+  DIAMOND, CLUB, HEART, SPADE,;
+  // DIAMOND-> no need DIAMOND (1),
+
 
   //private int value;
 
@@ -26,6 +24,7 @@ public enum Suit {
   public static void main(String[] args) {
     //enum compareTo -> ordering
     System.out.println(DIAMOND.compareTo(SPADE)); // -3 (1-4)
+    System.out.println(Suit.HEART.compareTo(Suit.DIAMOND)); // 2
   }
 
 

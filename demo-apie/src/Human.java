@@ -11,6 +11,6 @@ public abstract class Human {
   }
 
   // abstract method
-  
-  
+  abstract void walk();
 }
+  

@@ -1,17 +1,21 @@
 import java.math.BigDecimal;
 
 public class Circle extends Shape {
-  private BigDecimal radius;
+  private double radius;
 
-  public Circle(String color, BigDecimal radius) {
+  public Circle(String color, double radius) {
     super(color);
     this.radius = radius;
   }
 
   @Override
   public double area() {
-    return radius.multiply(radius).multiply(BigDecimal.valueOf(Math.PI)).doubleValue();
+    return BigDecimal.valueOf(this.radius)
+        .multiply(BigDecimal.valueOf(this.radius)) //
+        .multiply(BigDecimal.valueOf(Math.PI)) //
+        .doubleValue();
   }
+
 
   // equals(), hashCode(), toString()
 
@@ -34,7 +38,7 @@ public class Circle extends Shape {
 
     Card c1 = new Card('A', 'D');
     Card c2 = new Card('A', 'D');
-    System.out.println(c1.equals(c2)); 
+    // System.out.println(c1.equals(c2)); 
     // false, if it is using Object.equals(), we do not override in Card.class
     // ! Object.equals() is checking address
     // true, if you re-define Card.equals()
