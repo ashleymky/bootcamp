@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashSet;
 
 public class DemoHashSet {
@@ -22,6 +23,27 @@ public class DemoHashSet {
     boolean result = strings.add("John");
     System.out.println(result); // false
     System.out.println(strings);
+
+    // isEmpty, contains, clear(), etc ... same as ArrayList
+
+    // example: ArrayList<String>, "Apple" "orange" "Apple" "lemon"
+
+    ArrayList<String> fruits = new ArrayList<>();
+    fruits.add("apple");
+    fruits.add("orange");
+    fruits.add("apple");
+    fruits.add("lemon");
+
+    // loop + hashset + add()
+    boolean foundDuplicated = false;
+    HashSet<String> fruistSet = new HashSet<>();
+    for (String fruit : fruit) {
+      if (!fruitSet.add(fruit))
+        foundDuplicated = true;
+      break;
+    }
+
+
 
   }
 }

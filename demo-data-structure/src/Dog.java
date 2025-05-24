@@ -15,7 +15,11 @@ public class Dog {
     if (this == obj) {
       return true;
   }
-
-  // 
+   if (!(obj instanceof Dog)) {
+      return false;
+    }
+    Dog dog = (Dog) obj;
+    return this.name == dog.getName();
+  }
 
 }

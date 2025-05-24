@@ -52,7 +52,7 @@ public class DemoArrayList {
     if (!names.contains("Peter")) {
 
     }
-    
+
     System.out.println(names.indexOf("Disney"));
     System.out.println(names.indexOf("Dad"));
 
@@ -60,24 +60,31 @@ public class DemoArrayList {
 
     }
 
-    //! becasue ArrayList is with ordering
-    System.out.println(names.getFirst()); 
+    // ! becasue ArrayList is with ordering
+    System.out.println(names.getFirst());
     System.out.println(names.get(1));
 
     List<String> reversed = names.reversed(); // not important
     System.out.println(reversed);
 
-    names.clear(); 
+    String oldValue = reversed.set(1, "Steve");
+    System.out.println(oldValue); 
+    System.out.println(reversed); 
+
+    names.clear();
     System.out.println(names.isEmpty());
     System.out.println(names.size());
     names = null; // what is difference between line 69 & null
 
     // remove Dog
-    List<Dog> dogs = new ArrayList<>();
+    ArrayList<Dog> dogs = new ArrayList<>();
     dogs.add(new Dog("Roaf"));
     dogs.add(new Dog("Mow"));
     dogs.remove(new Dog("Roaf"));
-    
+    dogs.remove(new Dog("Peter"));
+    System.out.println(dogs);
+
+    // remove("Peter"), remove the first "Peter"
 
   }
 }
