@@ -36,14 +36,14 @@ public class DemoHashSet {
 
     // loop + hashset + add()
     boolean foundDuplicated = false;
-    HashSet<String> fruistSet = new HashSet<>();
-    for (String fruit : fruit) {
+    HashSet<String> fruitSet = new HashSet<>();
+    for (String fruit : fruits) {
       if (!fruitSet.add(fruit))
         foundDuplicated = true;
       break;
     }
 
-
+    System.out.println("Found duplicated fruit: " + foundDuplicated);
 
   }
 }
