@@ -16,6 +16,9 @@ public class Ball {
     return this.color;
   }
 
+  public Integer getNumber() {
+    return this.number;
+  }
   public static enum Color {
     Red, Blue, Yellow;
   }
@@ -39,5 +42,7 @@ public class Ball {
     // if color is same, larger number goes first
     // Yellow,9 > Yellow, 5 > Red, 1000 > Blue 10; Blue 2
 
+    Collections.sort(balls, new SortedByBall2());
+    System.out.println(balls);
   }
 }
